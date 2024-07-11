@@ -12,10 +12,15 @@ BOT_NAME = 'scrapytutorial'
 SPIDER_MODULES = ['scrapytutorial.spiders']
 NEWSPIDER_MODULE = 'scrapytutorial.spiders'
 
-
+ITEM_PIPELINES = {
+    'scrapytutorial.pipelines.TextPipeline': 300,
+    'scrapytutorial.pipelines.MongoDBPipeline': 400,
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapytutorial (+http://www.yourdomain.com)'
 
+MONGODB_CONNECTION_STRING = '192.168.52.128'
+MONGODB_DATABASE = 'scrapytutorial'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
