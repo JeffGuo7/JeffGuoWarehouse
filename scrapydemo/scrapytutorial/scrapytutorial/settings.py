@@ -1,4 +1,4 @@
-# Scrapy settings for news project
+# Scrapy settings for scrapytutorial project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'news'
+BOT_NAME = 'scrapytutorial'
 
-SPIDER_MODULES = ['news.spiders']
-NEWSPIDER_MODULE = 'news.spiders'
+SPIDER_MODULES = ['scrapytutorial.spiders']
+NEWSPIDER_MODULE = 'scrapytutorial.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'news (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapytutorial (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'news.middlewares.NewsSpiderMiddleware': 543,
+#    'scrapytutorial.middlewares.ScrapytutorialSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'news.middlewares.NewsDownloaderMiddleware': 543,
+#    'scrapytutorial.middlewares.ScrapytutorialDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'news.pipelines.NewsPipeline': 300,
+#    'scrapytutorial.pipelines.ScrapytutorialPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
